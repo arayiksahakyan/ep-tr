@@ -124,7 +124,6 @@ resource "azurerm_linux_virtual_machine" "vm" {
       "sudo DEBIAN_FRONTEND=noninteractive apt-get install -y nginx",
       "sudo systemctl enable nginx",
       "sudo systemctl start nginx",
-      "echo '<h1>NGINX is running on Azure VM</h1>' | sudo tee /var/www/html/index.html"
     ]
 
     connection {
